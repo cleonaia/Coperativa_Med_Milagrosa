@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Test</title>
+</head>
+<body style="margin: 0; padding: 20px; font-family: Arial, sans-serif; background: #f0f0f0;">
+    <h1>🧪 PRUEBA CHATBOT</h1>
+    <p>Si ves un botón dorado pulsante en la esquina superior derecha, ¡el chatbot funciona!</p>
+    <p>Haz clic en el botón para abrir el chatbot.</p>
+
+    <!-- CHATBOT FIJO -->
+    <div id="chatbot-fixed" style="position: fixed; top: 50px; right: 20px; z-index: 99999;">
+        <button id="chatbot-btn" style="
+            width: 70px; 
+            height: 70px; 
+            border-radius: 50%; 
+            background: linear-gradient(45deg, #FFD700, #FFA500); 
+            border: 3px solid white; 
+            color: white; 
+            font-size: 28px; 
+            cursor: pointer; 
+            box-shadow: 0 4px 15px rgba(255,215,0,0.4); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            animation: chatbot-pulse 2s infinite;
+        ">
+            💬
+        </button>
+        
+        <div id="chatbot-window" style="
+            position: absolute; 
+            bottom: 80px; 
+            right: 0; 
+            width: 350px; 
+            height: 400px; 
+            background: white; 
+            border-radius: 15px; 
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2); 
+            display: none; 
+            flex-direction: column; 
+            overflow: hidden;
+            border: 2px solid #FFD700;
+        ">
+            <div style="background: linear-gradient(45deg, #4CAF50, #2E7D32); color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-weight: bold;">🤖 Chatbot Test</span>
+                <button id="chatbot-close" style="background: none; border: none; color: white; font-size: 20px; cursor: pointer;">×</button>
+            </div>
+            
+            <div style="flex: 1; padding: 15px; background: #f9f9f9;">
+                <p>¡Hola! Este es un chatbot de prueba.</p>
+                <button onclick="alert('¡Botón funciona!')" style="background: #4CAF50; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer; width: 100%;">
+                    Hacer clic aquí
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @keyframes chatbot-pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        #chatbot-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(255,215,0,0.6);
+        }
+    </style>
+
+    <script>
+        document.getElementById('chatbot-btn').onclick = function() {
+            const window = document.getElementById('chatbot-window');
+            window.style.display = window.style.display === 'none' ? 'flex' : 'none';
+        };
+        
+        document.getElementById('chatbot-close').onclick = function() {
+            document.getElementById('chatbot-window').style.display = 'none';
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medalla Online - Cooperativa Medalla Milagrosa</title>
+    <meta name="description" content="Banca digital Medalla Online: consulta saldos, realiza transferencias, paga servicios y gestiona tus productos desde cualquier lugar, las 24 horas.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="header fixed-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-3 col-6">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" alt="Cooperativa Medalla Milagrosa" class="logo-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-6">
+                    <nav class="navbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                    <i class="fas fa-info-circle"></i> Nosotros
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="historia.html">Historia</a>
+                                    <a class="dropdown-item" href="mision.html">Misión</a>
+                                    <a class="dropdown-item" href="valores.html">Valores</a>
+                                    <a class="dropdown-item" href="cooperativismo.html">Cooperativismo</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                    <i class="fas fa-coins"></i> Servicios
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="creditos.html">Créditos</a>
+                                    <a class="dropdown-item" href="ahorros.html">Ahorros</a>
+                                    <a class="dropdown-item" href="tarjetas.html">Tarjetas</a>
+                                    <a class="dropdown-item" href="seguros.html">Seguros</a>
+                                    <a class="dropdown-item" href="medalla-online.html">Medalla Online</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="solidaridad.html">
+                                    <i class="fas fa-heart"></i> Solidaridad
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="locales.html">
+                                    <i class="fas fa-map-marker-alt"></i> Sucursales
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">
+                                    <i class="fas fa-phone"></i> Contacto
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="navbar-toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Promocional -->
+    <div id="bannerContainer"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section medalla-online-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 col-md-12">
+                    <div class="hero-content" data-aos="fade-right">
+                        <h1 class="hero-title gradient-text">
+                            <span class="typing-text">Medalla Online</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Tu cooperativa en tu bolsillo. Gestiona tus finanzas desde cualquier lugar, las 24 horas del día.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#descargar-app" class="btn btn-primary smooth-scroll">
+                                <i class="fas fa-download"></i> Descargar App
+                            </a>
+                            <a href="#acceso-web" class="btn btn-outline-primary smooth-scroll">
+                                <i class="fas fa-globe"></i> Acceso Web
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="hero-mockup" data-aos="fade-left">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <div class="app-interface">
+                                    <div class="app-header">
+                                        <div class="app-logo">
+                                            <img src="assets/images/logo-small.png" alt="Medalla Online">
+                                        </div>
+                                        <div class="app-title">Medalla Online</div>
+                                    </div>
+                                    <div class="app-balance">
+                                        <div class="balance-title">Saldo Total</div>
+                                        <div class="balance-amount">₲ 2,450,000</div>
+                                    </div>
+                                    <div class="app-menu">
+                                        <div class="menu-item">
+                                            <i class="fas fa-exchange-alt"></i>
+                                            <span>Transferir</span>
+                                        </div>
+                                        <div class="menu-item">
+                                            <i class="fas fa-bill"></i>
+                                            <span>Pagar</span>
+                                        </div>
+                                        <div class="menu-item">
+                                            <i class="fas fa-chart-line"></i>
+                                            <span>Invertir</span>
+                                        </div>
+                                        <div class="menu-item">
+                                            <i class="fas fa-history"></i>
+                                            <span>Historial</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Funcionalidades -->
+    <section class="funcionalidades section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>¿Qué puedes hacer con Medalla Online?</h2>
+                        <p>Todas las funcionalidades de tu cooperativa al alcance de tu mano</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="100">
+                    <div class="funcionalidad-card">
+                        <div class="func-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h4>Consultar Saldos</h4>
+                        <p>Visualiza el saldo de todas tus cuentas de ahorro, créditos y tarjetas en tiempo real.</p>
+                        <ul class="func-features">
+                            <li>Saldos actualizados</li>
+                            <li>Múltiples cuentas</li>
+                            <li>Historial de movimientos</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">
+                    <div class="funcionalidad-card">
+                        <div class="func-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h4>Transferencias</h4>
+                        <p>Realiza transferencias entre tus cuentas y a otros asociados de forma instantánea.</p>
+                        <ul class="func-features">
+                            <li>Transferencias inmediatas</li>
+                            <li>Entre cuentas propias</li>
+                            <li>A otros asociados</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="300">
+                    <div class="funcionalidad-card">
+                        <div class="func-icon">
+                            <i class="fas fa-file-invoice"></i>
+                        </div>
+                        <h4>Pago de Servicios</h4>
+                        <p>Paga tus servicios básicos, impuestos y facturas sin salir de casa.</p>
+                        <ul class="func-features">
+                            <li>ANDE, ESSAP, COPACO</li>
+                            <li>Telefonía móvil</li>
+                            <li>Impuestos SET</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="funcionalidad-card">
+                        <div class="func-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h4>Gestión de Tarjetas</h4>
+                        <p>Administra tus tarjetas de débito y crédito con control total.</p>
+                        <ul class="func-features">
+                            <li>Bloqueo/desbloqueo</li>
+                            <li>Cambio de PIN</li>
+                            <li>Límites de compra</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="500">
+                    <div class="funcionalidad-card">
+                        <div class="func-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h4>Análisis Financiero</h4>
+                        <p>Visualiza gráficos y estadísticas de tus finanzas personales.</p>
+                        <ul class="func-features">
+                            <li>Gráficos de gastos</li>
+                            <li>Categorización automática</li>
+                            <li>Metas de ahorro</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="600">
+                    <div class="funcionalidad-card">
+                        <div class="func-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <h4>Notificaciones</h4>
+                        <p>Recibe alertas de movimientos, vencimientos y promociones.</p>
+                        <ul class="func-features">
+                            <li>Alertas de transacciones</li>
+                            <li>Recordatorios de pagos</li>
+                            <li>Promociones exclusivas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Interactivo -->
+    <section class="demo-section section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>Prueba Medalla Online</h2>
+                        <p>Explora las funcionalidades de nuestra plataforma</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="demo-tabs" data-aos="fade-right">
+                        <div class="tab-button active" data-demo="saldos">
+                            <i class="fas fa-wallet"></i>
+                            <span>Consultar Saldos</span>
+                        </div>
+                        <div class="tab-button" data-demo="transferir">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Transferir Dinero</span>
+                        </div>
+                        <div class="tab-button" data-demo="pagar">
+                            <i class="fas fa-receipt"></i>
+                            <span>Pagar Servicios</span>
+                        </div>
+                        <div class="tab-button" data-demo="tarjetas">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Gestionar Tarjetas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-md-12">
+                    <div class="demo-content" data-aos="fade-left">
+                        <!-- Saldos Demo -->
+                        <div class="demo-panel active" id="saldos-demo">
+                            <h4>Consulta de Saldos</h4>
+                            <div class="account-list">
+                                <div class="account-item">
+                                    <div class="account-info">
+                                        <h5>Cuenta de Ahorro</h5>
+                                        <span class="account-number">****-1234</span>
+                                    </div>
+                                    <div class="account-balance">₲ 1,250,000</div>
+                                </div>
+                                <div class="account-item">
+                                    <div class="account-info">
+                                        <h5>Ahorro Programado</h5>
+                                        <span class="account-number">****-5678</span>
+                                    </div>
+                                    <div class="account-balance">₲ 850,000</div>
+                                </div>
+                                <div class="account-item">
+                                    <div class="account-info">
+                                        <h5>Tarjeta de Crédito</h5>
+                                        <span class="account-number">****-9012</span>
+                                    </div>
+                                    <div class="account-balance">₲ 350,000</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Transferir Demo -->
+                        <div class="demo-panel" id="transferir-demo">
+                            <h4>Transferir Dinero</h4>
+                            <div class="transfer-form">
+                                <div class="form-group">
+                                    <label>Desde</label>
+                                    <select class="form-control">
+                                        <option>Cuenta Ahorro ****-1234</option>
+                                        <option>Ahorro Programado ****-5678</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Para</label>
+                                    <input type="text" class="form-control" placeholder="Número de cuenta o asociado">
+                                </div>
+                                <div class="form-group">
+                                    <label>Monto</label>
+                                    <input type="number" class="form-control" placeholder="₲ 0">
+                                </div>
+                                <button class="btn btn-primary btn-block" disabled>Transferir</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Pagar Demo -->
+                        <div class="demo-panel" id="pagar-demo">
+                            <h4>Pagar Servicios</h4>
+                            <div class="service-options">
+                                <div class="service-item">
+                                    <img src="assets/images/ande-logo.png" alt="ANDE">
+                                    <span>ANDE</span>
+                                </div>
+                                <div class="service-item">
+                                    <img src="assets/images/essap-logo.png" alt="ESSAP">
+                                    <span>ESSAP</span>
+                                </div>
+                                <div class="service-item">
+                                    <img src="assets/images/copaco-logo.png" alt="COPACO">
+                                    <span>COPACO</span>
+                                </div>
+                                <div class="service-item">
+                                    <img src="assets/images/tigo-logo.png" alt="Tigo">
+                                    <span>Tigo</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tarjetas Demo -->
+                        <div class="demo-panel" id="tarjetas-demo">
+                            <h4>Gestionar Tarjetas</h4>
+                            <div class="card-management">
+                                <div class="card-item">
+                                    <div class="card-info">
+                                        <h5>Tarjeta de Débito</h5>
+                                        <span>****-1234</span>
+                                    </div>
+                                    <div class="card-actions">
+                                        <button class="btn btn-sm btn-outline-primary">Bloquear</button>
+                                        <button class="btn btn-sm btn-outline-primary">Configurar</button>
+                                    </div>
+                                </div>
+                                <div class="card-item">
+                                    <div class="card-info">
+                                        <h5>Tarjeta de Crédito</h5>
+                                        <span>****-5678</span>
+                                    </div>
+                                    <div class="card-actions">
+                                        <button class="btn btn-sm btn-outline-primary">Bloquear</button>
+                                        <button class="btn btn-sm btn-outline-primary">Configurar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Descargar App -->
+    <section id="descargar-app" class="download-section section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="download-content" data-aos="fade-right">
+                        <h2>Descarga la App Medalla Online</h2>
+                        <p>Disponible para Android e iOS. Disfruta de todas las funcionalidades desde tu smartphone.</p>
+                        
+                        <div class="app-features">
+                            <div class="feature-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Compatible con Android e iOS</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Seguridad bancaria de nivel mundial</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-sync"></i>
+                                <span>Actualizaciones automáticas</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-headset"></i>
+                                <span>Soporte técnico 24/7</span>
+                            </div>
+                        </div>
+                        
+                        <div class="download-buttons">
+                            <a href="#" class="download-btn">
+                                <img src="assets/images/google-play.png" alt="Google Play">
+                            </a>
+                            <a href="#" class="download-btn">
+                                <img src="assets/images/app-store.png" alt="App Store">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="download-mockup" data-aos="fade-left">
+                        <img src="assets/images/app-mockup.png" alt="Medalla Online App" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acceso Web -->
+    <section id="acceso-web" class="web-access-section section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>Acceso Web</h2>
+                        <p>También puedes acceder desde tu computadora</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8">
+                    <div class="login-form" data-aos="fade-up">
+                        <h3>Iniciar Sesión</h3>
+                        <form>
+                            <div class="form-group">
+                                <label>Usuario</label>
+                                <input type="text" class="form-control" placeholder="Ingresa tu usuario">
+                            </div>
+                            <div class="form-group">
+                                <label>Contraseña</label>
+                                <input type="password" class="form-control" placeholder="Ingresa tu contraseña">
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="remember">
+                                    <label class="form-check-label" for="remember">
+                                        Recordar usuario
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fas fa-sign-in-alt"></i> Ingresar
+                            </button>
+                        </form>
+                        
+                        <div class="login-links">
+                            <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                            <a href="#" class="register-link">Registrarse</a>
+                        </div>
+                        
+                        <div class="security-info">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Conexión segura SSL 256-bit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seguridad -->
+    <section class="security-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>Seguridad Garantizada</h2>
+                        <p>Tu información y dinero están protegidos con la mejor tecnología</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="security-item">
+                        <div class="security-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h4>Encriptación SSL</h4>
+                        <p>Todas las comunicaciones están encriptadas con tecnología SSL de 256 bits</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="security-item">
+                        <div class="security-icon">
+                            <i class="fas fa-fingerprint"></i>
+                        </div>
+                        <h4>Autenticación Biométrica</h4>
+                        <p>Huella dactilar y reconocimiento facial para mayor seguridad</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="security-item">
+                        <div class="security-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <h4>Alertas Instantáneas</h4>
+                        <p>Notificaciones inmediatas de todos los movimientos en tus cuentas</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="security-item">
+                        <div class="security-icon">
+                            <i class="fas fa-eye-slash"></i>
+                        </div>
+                        <h4>Sesiones Seguras</h4>
+                        <p>Cierre automático de sesión por inactividad y dispositivos registrados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soporte -->
+    <section class="support-section section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>Soporte y Ayuda</h2>
+                        <p>Estamos aquí para ayudarte en todo momento</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="support-item">
+                        <div class="support-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>Centro de Llamadas</h4>
+                        <p>Atención telefónica las 24 horas</p>
+                        <a href="tel:+595021123456" class="support-link">(021) 123-456</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="support-item">
+                        <div class="support-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>Chat en Vivo</h4>
+                        <p>Soporte inmediato desde la app</p>
+                        <a href="#" class="support-link">Iniciar Chat</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="support-item">
+                        <div class="support-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h4>Preguntas Frecuentes</h4>
+                        <p>Encuentra respuestas rápidas</p>
+                        <a href="#" class="support-link">Ver FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section medalla-online-cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cta-content text-center" data-aos="fade-up">
+                        <h2>¡Únete a la Revolución Digital!</h2>
+                        <p>Descarga Medalla Online y lleva tu cooperativa contigo a donde vayas</p>
+                        <div class="cta-buttons">
+                            <a href="#descargar-app" class="btn btn-primary smooth-scroll">
+                                <i class="fas fa-download"></i> Descargar Ahora
+                            </a>
+                            <a href="#acceso-web" class="btn btn-outline-primary smooth-scroll">
+                                <i class="fas fa-globe"></i> Acceder desde Web
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <img src="assets/images/logo-white.png" alt="Cooperativa Medalla Milagrosa">
+                            </div>
+                            <p>
+                                Más de 50 años promoviendo el desarrollo socioeconómico de nuestros asociados y la comunidad paraguaya.
+                            </p>
+                            <div class="footer-social">
+                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Nosotros</h4>
+                            <ul class="footer-links">
+                                <li><a href="historia.html">Historia</a></li>
+                                <li><a href="mision.html">Misión</a></li>
+                                <li><a href="valores.html">Valores</a></li>
+                                <li><a href="cooperativismo.html">Cooperativismo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Servicios</h4>
+                            <ul class="footer-links">
+                                <li><a href="creditos.html">Créditos</a></li>
+                                <li><a href="ahorros.html">Ahorros</a></li>
+                                <li><a href="tarjetas.html">Tarjetas</a></li>
+                                <li><a href="seguros.html">Seguros</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Enlaces</h4>
+                            <ul class="footer-links">
+                                <li><a href="solidaridad.html">Solidaridad</a></li>
+                                <li><a href="locales.html">Sucursales</a></li>
+                                <li><a href="contacto.html">Contacto</a></li>
+                                <li><a href="medalla-online.html">Medalla Online</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Contacto</h4>
+                            <div class="contact-info">
+                                <p><i class="fas fa-phone"></i> (021) 123-456</p>
+                                <p><i class="fas fa-envelope"></i> info@medallamilagrosa.coop</p>
+                                <p><i class="fas fa-map-marker-alt"></i> Asunción, Paraguay</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <p>&copy; 2024 Cooperativa Medalla Milagrosa. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <p>Desarrollado con <i class="fas fa-heart text-danger"></i> por EchoDay</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-button">
+        <a href="https://wa.me/595981234567" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-text">¿Necesitas ayuda?</span>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Demo tab functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const demoTabs = document.querySelectorAll('.demo-tabs .tab-button');
+            const demoPanels = document.querySelectorAll('.demo-panel');
+            
+            demoTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const demoType = this.dataset.demo;
+                    
+                    // Remove active class from all tabs and panels
+                    demoTabs.forEach(t => t.classList.remove('active'));
+                    demoPanels.forEach(p => p.classList.remove('active'));
+                    
+                    // Add active class to clicked tab and corresponding panel
+                    this.classList.add('active');
+                    document.getElementById(demoType + '-demo').classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

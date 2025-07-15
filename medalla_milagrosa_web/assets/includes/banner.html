@@ -1,0 +1,230 @@
+<!-- Banner persistente con slider de anuncios -->
+<div id="promotionalBanner" class="promotional-banner">
+    <div class="banner-container">
+        <div class="banner-slides">
+            <!-- Slide 1: Formulario de Asociación -->
+            <div class="banner-slide active">
+                <a href="https://forms.office.com/r/R7wZ3TDmzQ" target="_blank">
+                    <img src="https://www.medalla.coop.py/gfx/Como_asociarse_2.jpg" alt="¿Cómo asociarse?" class="banner-image">
+                </a>
+            </div>
+            
+            <!-- Slide 2: Promoción Reintegros -->
+            <div class="banner-slide">
+                <a href="https://www.medalla.coop.py/gfx/bases-y-condiciones-promo-reintegros.pdf" target="_blank">
+                    <img src="https://www.medalla.coop.py/gfx/promo-reintegros.jpg" alt="Promoción Reintegros" class="banner-image">
+                </a>
+            </div>
+            
+            <!-- Slide 3: Promoción KIA 0km -->
+            <div class="banner-slide">
+                <a href="https://www.medalla.coop.py/gfx/Bases_y_Condiciones_MMC_40%20a%C3%B1os%20_KIA%200km_2025.pdf" target="_blank">
+                    <img src="https://www.medalla.coop.py/gfx/promo-kia-0km.jpg" alt="Promoción KIA 0km" class="banner-image">
+                </a>
+            </div>
+            
+            <!-- Slide 4: Tutorial QR -->
+            <div class="banner-slide">
+                <a href="https://www.medalla.coop.py/gfx/tutorial-qr.jpg" target="_blank">
+                    <img src="https://www.medalla.coop.py/gfx/tutorial-qr.jpg" alt="Tutorial QR" class="banner-image">
+                </a>
+            </div>
+            
+            <!-- Slide 5: Beneficios Alianza EME -->
+            <div class="banner-slide">
+                <a href="https://www.medalla.coop.py/gfx/Detalles%20de%20los%20beneficios%20de%20la%20alianza%20EME%20-1.jpg" target="_blank">
+                    <img src="https://www.medalla.coop.py/gfx/Detalles%20de%20los%20beneficios%20de%20la%20alianza%20EME%20-1.jpg" alt="Beneficios Alianza EME" class="banner-image">
+                </a>
+            </div>
+            
+            <!-- Slide 6: Medalla Online -->
+            <div class="banner-slide">
+                <a href="transferencias.php">
+                    <img src="https://www.medalla.coop.py/gfx/medalla-online-banner.jpg" alt="Medalla Online" class="banner-image">
+                </a>
+            </div>
+            
+            <!-- Slide 7: Servicios Exequiales -->
+            <div class="banner-slide">
+                <a href="solidaridad.php">
+                    <img src="https://www.medalla.coop.py/gfx/solidaridadImg/15%20Servicios%20exequiales.jpg" alt="Servicios Exequiales" class="banner-image">
+                </a>
+            </div>
+            
+            <!-- Slide 8: Redes de Cobranzas -->
+            <div class="banner-slide">
+                <a href="cobranzas.php">
+                    <img src="https://www.medalla.coop.py/gfx/cobranzas-banner.jpg" alt="Redes de Cobranzas" class="banner-image">
+                </a>
+            </div>
+        </div>
+        
+        <!-- Controles del banner -->
+        <div class="banner-controls">
+            <button class="banner-prev" onclick="previousSlide()">❮</button>
+            <button class="banner-next" onclick="nextSlide()">❯</button>
+        </div>
+        
+        <!-- Indicadores -->
+        <div class="banner-indicators">
+            <span class="indicator active" onclick="currentSlide(1)"></span>
+            <span class="indicator" onclick="currentSlide(2)"></span>
+            <span class="indicator" onclick="currentSlide(3)"></span>
+            <span class="indicator" onclick="currentSlide(4)"></span>
+            <span class="indicator" onclick="currentSlide(5)"></span>
+            <span class="indicator" onclick="currentSlide(6)"></span>
+            <span class="indicator" onclick="currentSlide(7)"></span>
+            <span class="indicator" onclick="currentSlide(8)"></span>
+        </div>
+    </div>
+</div>
+
+<style>
+.promotional-banner {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+
+.banner-slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.banner-slide.active {
+    display: block;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.banner-image:hover {
+    transform: scale(1.02);
+}
+
+.banner-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    transform: translateY(-50%);
+}
+
+.banner-prev, .banner-next {
+    background: rgba(46, 125, 50, 0.8);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.banner-prev:hover, .banner-next:hover {
+    background: rgba(46, 125, 50, 1);
+    transform: scale(1.1);
+}
+
+.banner-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active, .indicator:hover {
+    background: #2e7d32;
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .banner-container {
+        height: 120px;
+    }
+    
+    .banner-controls {
+        padding: 0 10px;
+    }
+    
+    .banner-prev, .banner-next {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+}
+</style>
+
+<script>
+let currentSlideIndex = 0;
+const totalSlides = 8;
+
+function showSlide(n) {
+    const slides = document.querySelectorAll('.banner-slide');
+    const indicators = document.querySelectorAll('.indicator');
+    
+    if (n >= totalSlides) currentSlideIndex = 0;
+    if (n < 0) currentSlideIndex = totalSlides - 1;
+    
+    slides.forEach(slide => slide.classList.remove('active'));
+    indicators.forEach(indicator => indicator.classList.remove('active'));
+    
+    slides[currentSlideIndex].classList.add('active');
+    indicators[currentSlideIndex].classList.add('active');
+}
+
+function nextSlide() {
+    currentSlideIndex++;
+    showSlide(currentSlideIndex);
+}
+
+function previousSlide() {
+    currentSlideIndex--;
+    showSlide(currentSlideIndex);
+}
+
+function currentSlide(n) {
+    currentSlideIndex = n - 1;
+    showSlide(currentSlideIndex);
+}
+
+// Auto-slide cada 5 segundos
+setInterval(nextSlide, 5000);
+</script>

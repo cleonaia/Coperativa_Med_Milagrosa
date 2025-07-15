@@ -1,0 +1,53 @@
+{
+  "name": "medalla-milagrosa-web",
+  "version": "1.0.0",
+  "description": "Sitio web innovador para la Cooperativa Medalla Milagrosa",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s . -l 3000",
+    "build": "echo 'Build process - minify CSS/JS'",
+    "dev": "live-server --port=3000",
+    "lint": "eslint assets/js/",
+    "optimize": "imagemin assets/images/* --out-dir=assets/images/optimized",
+    "deploy": "echo 'Deploy to production server'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medalla-milagrosa/web.git"
+  },
+  "keywords": [
+    "cooperativa",
+    "medalla-milagrosa",
+    "paraguay",
+    "financiera",
+    "creditos",
+    "ahorros",
+    "tarjetas",
+    "seguros",
+    "web",
+    "responsive"
+  ],
+  "author": "EchoDay.tech",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/medalla-milagrosa/web/issues"
+  },
+  "homepage": "https://www.medalla.coop.py",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.0",
+    "eslint": "^8.45.0",
+    "imagemin": "^8.0.1",
+    "imagemin-png": "^8.0.0",
+    "imagemin-jpeg": "^10.0.0"
+  },
+  "dependencies": {},
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solidaridad - Cooperativa Medalla Milagrosa</title>
+    <meta name="description" content="Programas de responsabilidad social de la Cooperativa Medalla Milagrosa: educación, salud, apoyo comunitario y desarrollo sostenible.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="header fixed-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-3 col-6">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" alt="Cooperativa Medalla Milagrosa" class="logo-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-6">
+                    <nav class="navbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                    <i class="fas fa-info-circle"></i> Nosotros
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="historia.html">Historia</a>
+                                    <a class="dropdown-item" href="mision.html">Misión</a>
+                                    <a class="dropdown-item" href="valores.html">Valores</a>
+                                    <a class="dropdown-item" href="cooperativismo.html">Cooperativismo</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                    <i class="fas fa-coins"></i> Servicios
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="creditos.html">Créditos</a>
+                                    <a class="dropdown-item" href="ahorros.html">Ahorros</a>
+                                    <a class="dropdown-item" href="tarjetas.html">Tarjetas</a>
+                                    <a class="dropdown-item" href="seguros.html">Seguros</a>
+                                    <a class="dropdown-item" href="medalla-online.html">Medalla Online</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="solidaridad.html">
+                                    <i class="fas fa-heart"></i> Solidaridad
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="locales.html">
+                                    <i class="fas fa-map-marker-alt"></i> Sucursales
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">
+                                    <i class="fas fa-phone"></i> Contacto
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="navbar-toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Promocional -->
+    <div id="bannerContainer"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section solidaridad-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 col-md-10 mx-auto text-center">
+                    <div class="hero-content" data-aos="fade-up">
+                        <h1 class="hero-title gradient-text">
+                            <span class="typing-text">Solidaridad y Compromiso Social</span>
+                        </h1>
+                        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                            Trabajamos por el desarrollo integral de nuestra comunidad con programas de impacto social
+                        </p>
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                            <a href="#programas-sociales" class="btn btn-primary smooth-scroll">
+                                <i class="fas fa-arrow-down"></i> Conoce Nuestros Programas
+                            </a>
+                            <a href="#como-participar" class="btn btn-outline-primary smooth-scroll">
+                                <i class="fas fa-hand-holding-heart"></i> Cómo Participar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Nuestro Compromiso -->
+    <section class="compromiso-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>Nuestro Compromiso Social</h2>
+                        <p>Más allá de los servicios financieros, construimos un Paraguay mejor</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12" data-aos="fade-right">
+                    <div class="compromiso-content">
+                        <h3>Transformando Vidas</h3>
+                        <p>
+                            En la Cooperativa Medalla Milagrosa entendemos que nuestro rol va más allá de ofrecer servicios financieros. Estamos comprometidos con el desarrollo integral de nuestra comunidad, especialmente con aquellos que más lo necesitan.
+                        </p>
+                        <p>
+                            A través de nuestros programas de responsabilidad social, buscamos generar un impacto positivo y duradero en las áreas de educación, salud, desarrollo comunitario y apoyo a poblaciones vulnerables.
+                        </p>
+                        
+                        <div class="compromiso-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">15,000+</div>
+                                <div class="stat-label">Familias Beneficiadas</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">Programas Activos</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">₲2.5B</div>
+                                <div class="stat-label">Inversión Social Anual</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12" data-aos="fade-left">
+                    <div class="compromiso-image">
+                        <img src="assets/images/compromiso-social.jpg" alt="Compromiso Social" class="img-fluid rounded">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-heart"></i>
+                                <h4>Compromiso Social</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programas Sociales -->
+    <section id="programas-sociales" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>Programas Sociales</h2>
+                        <p>Iniciativas que transforman comunidades y construyen esperanza</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="100">
+                    <div class="programa-card">
+                        <div class="programa-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Educación para Todos</h3>
+                        <p>Becas de estudio, útiles escolares y apoyo educativo para niños y jóvenes de familias de bajos recursos.</p>
+                        <div class="programa-features">
+                            <ul>
+                                <li>Becas universitarias</li>
+                                <li>Útiles escolares gratuitos</li>
+                                <li>Apoyo a centros educativos</li>
+                                <li>Capacitación docente</li>
+                            </ul>
+                        </div>
+                        <div class="programa-impact">
+                            <span class="impact-number">2,500+</span>
+                            <span class="impact-label">Estudiantes Beneficiados</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">
+                    <div class="programa-card">
+                        <div class="programa-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Salud Comunitaria</h3>
+                        <p>Programas de salud preventiva, campañas de vacunación y apoyo médico a comunidades vulnerables.</p>
+                        <div class="programa-features">
+                            <ul>
+                                <li>Consultas médicas gratuitas</li>
+                                <li>Campañas de vacunación</li>
+                                <li>Medicamentos subsidiados</li>
+                                <li>Educación en salud</li>
+                            </ul>
+                        </div>
+                        <div class="programa-impact">
+                            <span class="impact-number">8,000+</span>
+                            <span class="impact-label">Personas Atendidas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="300">
+                    <div class="programa-card">
+                        <div class="programa-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Desarrollo Sostenible</h3>
+                        <p>Proyectos de agricultura sostenible, reforestación y educación ambiental para un futuro verde.</p>
+                        <div class="programa-features">
+                            <ul>
+                                <li>Huertos comunitarios</li>
+                                <li>Reforestación urbana</li>
+                                <li>Educación ambiental</li>
+                                <li>Energías renovables</li>
+                            </ul>
+                        </div>
+                        <div class="programa-impact">
+                            <span class="impact-number">50,000+</span>
+                            <span class="impact-label">Árboles Plantados</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="programa-card">
+                        <div class="programa-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Desarrollo Comunitario</h3>
+                        <p>Fortalecimiento de organizaciones comunitarias y proyectos de infraestructura básica.</p>
+                        <div class="programa-features">
+                            <ul>
+                                <li>Centros comunitarios</li>
+                                <li>Capacitación en oficios</li>
+                                <li>Microemprendimientos</li>
+                                <li>Infraestructura básica</li>
+                            </ul>
+                        </div>
+                        <div class="programa-impact">
+                            <span class="impact-number">120+</span>
+                            <span class="impact-label">Proyectos Comunitarios</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="500">
+                    <div class="programa-card">
+                        <div class="programa-icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h3>Infancia Protegida</h3>
+                        <p>Programas de protección infantil, nutrición y apoyo a madres solteras y familias vulnerables.</p>
+                        <div class="programa-features">
+                            <ul>
+                                <li>Comedores infantiles</li>
+                                <li>Guarderías comunitarias</li>
+                                <li>Apoyo nutricional</li>
+                                <li>Protección infantil</li>
+                            </ul>
+                        </div>
+                        <div class="programa-impact">
+                            <span class="impact-number">1,200+</span>
+                            <span class="impact-label">Niños Beneficiados</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="600">
+                    <div class="programa-card">
+                        <div class="programa-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Apoyo en Emergencias</h3>
+                        <p>Respuesta rápida ante desastres naturales y situaciones de emergencia comunitaria.</p>
+                        <div class="programa-features">
+                            <ul>
+                                <li>Fondo de emergencias</li>
+                                <li>Kits de supervivencia</li>
+                                <li>Albergues temporales</li>
+                                <li>Reconstrucción comunitaria</li>
+                            </ul>
+                        </div>
+                        <div class="programa-impact">
+                            <span class="impact-number">5,000+</span>
+                            <span class="impact-label">Familias Asistidas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historias de Impacto -->
+    <section class="historias-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>Historias de Impacto</h2>
+                        <p>Testimonios reales de vidas transformadas</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="historia-card">
+                        <div class="historia-image">
+                            <img src="assets/images/historia-1.jpg" alt="María González">
+                        </div>
+                        <div class="historia-content">
+                            <h4>María González</h4>
+                            <p class="historia-subtitle">Beneficiaria del Programa de Educación</p>
+                            <p>
+                                "Gracias a la beca que me otorgó la cooperativa, pude completar mis estudios universitarios. Ahora soy doctora y ayudo a mi comunidad."
+                            </p>
+                            <div class="historia-meta">
+                                <span class="meta-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    San Lorenzo
+                                </span>
+                                <span class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    2018-2024
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="historia-card">
+                        <div class="historia-image">
+                            <img src="assets/images/historia-2.jpg" alt="Carlos Mendoza">
+                        </div>
+                        <div class="historia-content">
+                            <h4>Carlos Mendoza</h4>
+                            <p class="historia-subtitle">Líder Comunitario</p>
+                            <p>
+                                "El apoyo de la cooperativa nos permitió construir nuestro centro comunitario. Ahora tenemos un lugar para reunirnos y capacitarnos."
+                            </p>
+                            <div class="historia-meta">
+                                <span class="meta-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Luque
+                                </span>
+                                <span class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    2020-2023
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="historia-card">
+                        <div class="historia-image">
+                            <img src="assets/images/historia-3.jpg" alt="Rosa Villamayor">
+                        </div>
+                        <div class="historia-content">
+                            <h4>Rosa Villamayor</h4>
+                            <p class="historia-subtitle">Emprendedora Social</p>
+                            <p>
+                                "Con el programa de microemprendimientos, pude iniciar mi negocio de costura. Ahora genero ingresos para mi familia y doy trabajo a otras mujeres."
+                            </p>
+                            <div class="historia-meta">
+                                <span class="meta-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Lambaré
+                                </span>
+                                <span class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    2019-2024
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo Participar -->
+    <section id="como-participar" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>¿Cómo Puedes Participar?</h2>
+                        <p>Únete a nuestros programas sociales y sé parte del cambio</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="participar-tabs" data-aos="fade-right">
+                        <div class="tab-button active" data-tab="voluntario">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <div class="tab-content">
+                                <h4>Ser Voluntario</h4>
+                                <p>Dona tu tiempo y habilidades</p>
+                            </div>
+                        </div>
+                        <div class="tab-button" data-tab="donacion">
+                            <i class="fas fa-donate"></i>
+                            <div class="tab-content">
+                                <h4>Hacer Donaciones</h4>
+                                <p>Contribuye económicamente</p>
+                            </div>
+                        </div>
+                        <div class="tab-button" data-tab="proponer">
+                            <i class="fas fa-lightbulb"></i>
+                            <div class="tab-content">
+                                <h4>Proponer Proyectos</h4>
+                                <p>Presenta tu idea social</p>
+                            </div>
+                        </div>
+                        <div class="tab-button" data-tab="beneficiario">
+                            <i class="fas fa-users"></i>
+                            <div class="tab-content">
+                                <h4>Ser Beneficiario</h4>
+                                <p>Accede a nuestros programas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-md-12">
+                    <div class="participar-content" data-aos="fade-left">
+                        <!-- Voluntario -->
+                        <div class="tab-panel active" id="voluntario-panel">
+                            <h3>Conviértete en Voluntario</h3>
+                            <p>Tu tiempo y habilidades pueden marcar la diferencia en la vida de muchas personas.</p>
+                            <div class="participar-form">
+                                <form>
+                                    <div class="form-group">
+                                        <label>Nombre Completo</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Teléfono</label>
+                                        <input type="tel" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Área de Interés</label>
+                                        <select class="form-control" required>
+                                            <option value="">Seleccionar</option>
+                                            <option value="educacion">Educación</option>
+                                            <option value="salud">Salud</option>
+                                            <option value="medio-ambiente">Medio Ambiente</option>
+                                            <option value="comunitario">Desarrollo Comunitario</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Inscribirme</button>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <!-- Donación -->
+                        <div class="tab-panel" id="donacion-panel">
+                            <h3>Hacer una Donación</h3>
+                            <p>Tu contribución económica nos ayuda a ampliar el alcance de nuestros programas sociales.</p>
+                            <div class="donation-options">
+                                <div class="donation-amount">
+                                    <label>Monto a Donar</label>
+                                    <div class="amount-buttons">
+                                        <button class="amount-btn">₲50,000</button>
+                                        <button class="amount-btn">₲100,000</button>
+                                        <button class="amount-btn">₲250,000</button>
+                                        <button class="amount-btn">₲500,000</button>
+                                    </div>
+                                    <input type="number" class="form-control" placeholder="Otro monto">
+                                </div>
+                                <div class="donation-frequency">
+                                    <label>Frecuencia</label>
+                                    <div class="frequency-options">
+                                        <label><input type="radio" name="frequency" value="unica"> Única</label>
+                                        <label><input type="radio" name="frequency" value="mensual"> Mensual</label>
+                                        <label><input type="radio" name="frequency" value="anual"> Anual</label>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary">Donar Ahora</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Proponer -->
+                        <div class="tab-panel" id="proponer-panel">
+                            <h3>Proponer un Proyecto</h3>
+                            <p>¿Tienes una idea que puede beneficiar a tu comunidad? Compártela con nosotros.</p>
+                            <div class="project-form">
+                                <form>
+                                    <div class="form-group">
+                                        <label>Nombre del Proyecto</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Descripción</label>
+                                        <textarea class="form-control" rows="4" required></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Comunidad Beneficiaria</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Presupuesto Estimado</label>
+                                        <input type="number" class="form-control" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Enviar Propuesta</button>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <!-- Beneficiario -->
+                        <div class="tab-panel" id="beneficiario-panel">
+                            <h3>Acceder a Programas</h3>
+                            <p>Si tu comunidad necesita apoyo, puedes solicitar acceso a nuestros programas sociales.</p>
+                            <div class="beneficiary-info">
+                                <div class="info-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Completa el formulario de solicitud</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Nuestro equipo evaluará tu solicitud</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Te contactaremos en 5 días hábiles</span>
+                                </div>
+                            </div>
+                            <a href="contacto.html" class="btn btn-primary">Solicitar Apoyo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparencia -->
+    <section class="transparencia-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>Transparencia en Acción</h2>
+                        <p>Conoce cómo utilizamos los recursos destinados a programas sociales</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="transparencia-content" data-aos="fade-up">
+                        <div class="budget-chart">
+                            <h4>Distribución del Presupuesto Social 2024</h4>
+                            <div class="chart-container">
+                                <div class="chart-item">
+                                    <div class="chart-bar" style="width: 35%;" data-percentage="35%">
+                                        <span class="chart-label">Educación</span>
+                                        <span class="chart-value">35%</span>
+                                    </div>
+                                </div>
+                                <div class="chart-item">
+                                    <div class="chart-bar" style="width: 25%;" data-percentage="25%">
+                                        <span class="chart-label">Salud</span>
+                                        <span class="chart-value">25%</span>
+                                    </div>
+                                </div>
+                                <div class="chart-item">
+                                    <div class="chart-bar" style="width: 20%;" data-percentage="20%">
+                                        <span class="chart-label">Desarrollo Comunitario</span>
+                                        <span class="chart-value">20%</span>
+                                    </div>
+                                </div>
+                                <div class="chart-item">
+                                    <div class="chart-bar" style="width: 15%;" data-percentage="15%">
+                                        <span class="chart-label">Medio Ambiente</span>
+                                        <span class="chart-value">15%</span>
+                                    </div>
+                                </div>
+                                <div class="chart-item">
+                                    <div class="chart-bar" style="width: 5%;" data-percentage="5%">
+                                        <span class="chart-label">Emergencias</span>
+                                        <span class="chart-value">5%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="download-reports">
+                            <h4>Informes de Transparencia</h4>
+                            <div class="reports-list">
+                                <a href="#" class="report-item">
+                                    <i class="fas fa-file-pdf"></i>
+                                    <span>Informe Anual 2023</span>
+                                    <i class="fas fa-download"></i>
+                                </a>
+                                <a href="#" class="report-item">
+                                    <i class="fas fa-file-pdf"></i>
+                                    <span>Memoria de Sostenibilidad 2023</span>
+                                    <i class="fas fa-download"></i>
+                                </a>
+                                <a href="#" class="report-item">
+                                    <i class="fas fa-file-pdf"></i>
+                                    <span>Impacto Social 2023</span>
+                                    <i class="fas fa-download"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section solidaridad-cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cta-content text-center" data-aos="fade-up">
+                        <h2>¡Únete a Nuestra Causa!</h2>
+                        <p>Juntos podemos construir un Paraguay más justo y próspero para todos</p>
+                        <div class="cta-buttons">
+                            <a href="#como-participar" class="btn btn-primary smooth-scroll">
+                                <i class="fas fa-hand-holding-heart"></i> Participar
+                            </a>
+                            <a href="contacto.html" class="btn btn-outline-primary">
+                                <i class="fas fa-phone"></i> Contactar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <img src="assets/images/logo-white.png" alt="Cooperativa Medalla Milagrosa">
+                            </div>
+                            <p>
+                                Más de 50 años promoviendo el desarrollo socioeconómico de nuestros asociados y la comunidad paraguaya.
+                            </p>
+                            <div class="footer-social">
+                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Nosotros</h4>
+                            <ul class="footer-links">
+                                <li><a href="historia.html">Historia</a></li>
+                                <li><a href="mision.html">Misión</a></li>
+                                <li><a href="valores.html">Valores</a></li>
+                                <li><a href="cooperativismo.html">Cooperativismo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Servicios</h4>
+                            <ul class="footer-links">
+                                <li><a href="creditos.html">Créditos</a></li>
+                                <li><a href="ahorros.html">Ahorros</a></li>
+                                <li><a href="tarjetas.html">Tarjetas</a></li>
+                                <li><a href="seguros.html">Seguros</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Enlaces</h4>
+                            <ul class="footer-links">
+                                <li><a href="solidaridad.html">Solidaridad</a></li>
+                                <li><a href="locales.html">Sucursales</a></li>
+                                <li><a href="contacto.html">Contacto</a></li>
+                                <li><a href="medalla-online.html">Medalla Online</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Contacto</h4>
+                            <div class="contact-info">
+                                <p><i class="fas fa-phone"></i> (021) 123-456</p>
+                                <p><i class="fas fa-envelope"></i> info@medallamilagrosa.coop</p>
+                                <p><i class="fas fa-map-marker-alt"></i> Asunción, Paraguay</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <p>&copy; 2024 Cooperativa Medalla Milagrosa. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <p>Desarrollado con <i class="fas fa-heart text-danger"></i> por EchoDay</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-button">
+        <a href="https://wa.me/595981234567" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-text">¿Necesitas ayuda?</span>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Participar tabs functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.participar-tabs .tab-button');
+            const tabPanels = document.querySelectorAll('.tab-panel');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const tabId = this.dataset.tab;
+                    
+                    // Remove active class from all buttons and panels
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabPanels.forEach(panel => panel.classList.remove('active'));
+                    
+                    // Add active class to clicked button and corresponding panel
+                    this.classList.add('active');
+                    document.getElementById(tabId + '-panel').classList.add('active');
+                });
+            });
+            
+            // Donation amount buttons
+            const amountButtons = document.querySelectorAll('.amount-btn');
+            const customAmountInput = document.querySelector('.donation-amount input[type="number"]');
+            
+            amountButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    amountButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    customAmountInput.value = this.textContent.replace('₲', '').replace(',', '');
+                });
+            });
+            
+            // Custom amount input
+            customAmountInput.addEventListener('input', function() {
+                amountButtons.forEach(btn => btn.classList.remove('active'));
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas - Cooperativa Medalla Milagrosa</title>
+    <meta name="description" content="Tarjetas de débito y crédito Medalla Milagrosa. Pagos seguros, beneficios exclusivos y la mejor tecnología financiera.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="header fixed-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-3 col-6">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" alt="Cooperativa Medalla Milagrosa" class="logo-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-6">
+                    <nav class="navbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                    <i class="fas fa-info-circle"></i> Nosotros
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="historia.html">Historia</a>
+                                    <a class="dropdown-item" href="mision.html">Misión</a>
+                                    <a class="dropdown-item" href="valores.html">Valores</a>
+                                    <a class="dropdown-item" href="cooperativismo.html">Cooperativismo</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                    <i class="fas fa-coins"></i> Servicios
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="creditos.html">Créditos</a>
+                                    <a class="dropdown-item" href="ahorros.html">Ahorros</a>
+                                    <a class="dropdown-item" href="tarjetas.html">Tarjetas</a>
+                                    <a class="dropdown-item" href="seguros.html">Seguros</a>
+                                    <a class="dropdown-item" href="medalla-online.html">Medalla Online</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="solidaridad.html">
+                                    <i class="fas fa-heart"></i> Solidaridad
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="locales.html">
+                                    <i class="fas fa-map-marker-alt"></i> Sucursales
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">
+                                    <i class="fas fa-phone"></i> Contacto
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="navbar-toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Promocional -->
+    <div id="bannerContainer"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section tarjetas-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 col-md-10 mx-auto text-center">
+                    <div class="hero-content" data-aos="fade-up">
+                        <h1 class="hero-title gradient-text">
+                            <span class="typing-text">Tarjetas Medalla Milagrosa</span>
+                        </h1>
+                        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                            La libertad financiera en tus manos con seguridad y beneficios exclusivos
+                        </p>
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                            <a href="#tarjetas-productos" class="btn btn-primary smooth-scroll">
+                                <i class="fas fa-arrow-down"></i> Ver Tarjetas
+                            </a>
+                            <a href="#solicitar-tarjeta" class="btn btn-outline-primary smooth-scroll">
+                                <i class="fas fa-credit-card"></i> Solicitar Ahora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Beneficios Principales -->
+    <section class="main-benefits section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>¿Por qué elegir nuestras tarjetas?</h2>
+                        <p>Beneficios exclusivos que marcan la diferencia</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Seguridad Total</h4>
+                        <p>Chip y tecnología contactless para máxima seguridad en tus transacciones</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>Aceptación Mundial</h4>
+                        <p>Úsala en cualquier lugar del mundo donde se acepte Visa o Mastercard</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h4>Beneficios Exclusivos</h4>
+                        <p>Descuentos y promociones especiales en comercios afiliados</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>Control Total</h4>
+                        <p>Gestiona tu tarjeta desde la app móvil las 24 horas del día</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos de Tarjetas -->
+    <section id="tarjetas-productos" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>Nuestras Tarjetas</h2>
+                        <p>Encuentra la tarjeta perfecta para tu estilo de vida</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tarjeta-card">
+                        <div class="tarjeta-visual">
+                            <div class="tarjeta-mockup debito">
+                                <div class="tarjeta-chip"></div>
+                                <div class="tarjeta-logo">
+                                    <img src="assets/images/visa-logo.png" alt="Visa">
+                                </div>
+                                <div class="tarjeta-number">**** **** **** 1234</div>
+                                <div class="tarjeta-info">
+                                    <div class="tarjeta-name">TU NOMBRE</div>
+                                    <div class="tarjeta-date">12/27</div>
+                                </div>
+                                <div class="tarjeta-brand">MEDALLA MILAGROSA</div>
+                            </div>
+                        </div>
+                        <div class="tarjeta-content">
+                            <h3>Tarjeta de Débito</h3>
+                            <p>Accede a tu dinero de forma segura y cómoda en cualquier momento y lugar.</p>
+                            
+                            <div class="tarjeta-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Sin costo de emisión</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Retiros sin costo en cajeros propios</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Compras online y presenciales</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Notificaciones en tiempo real</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Bloqueo/desbloqueo desde la app</span>
+                                </div>
+                            </div>
+                            
+                            <div class="tarjeta-action">
+                                <a href="#" class="btn btn-primary btn-block">Solicitar Tarjeta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tarjeta-card featured">
+                        <div class="tarjeta-badge">Más Beneficios</div>
+                        <div class="tarjeta-visual">
+                            <div class="tarjeta-mockup credito">
+                                <div class="tarjeta-chip"></div>
+                                <div class="tarjeta-logo">
+                                    <img src="assets/images/mastercard-logo.png" alt="Mastercard">
+                                </div>
+                                <div class="tarjeta-number">**** **** **** 5678</div>
+                                <div class="tarjeta-info">
+                                    <div class="tarjeta-name">TU NOMBRE</div>
+                                    <div class="tarjeta-date">12/27</div>
+                                </div>
+                                <div class="tarjeta-brand">MEDALLA MILAGROSA</div>
+                            </div>
+                        </div>
+                        <div class="tarjeta-content">
+                            <h3>Tarjeta de Crédito</h3>
+                            <p>Financia tus compras con las mejores condiciones y beneficios exclusivos.</p>
+                            
+                            <div class="tarjeta-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Hasta 40 días sin intereses</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Límite de hasta ₲50,000,000</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Cuotas flexibles</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Programa de recompensas</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Seguros incluidos</span>
+                                </div>
+                            </div>
+                            
+                            <div class="tarjeta-action">
+                                <a href="#" class="btn btn-primary btn-block">Solicitar Tarjeta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparativa de Tarjetas -->
+    <section class="comparativa-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>Comparativa de Tarjetas</h2>
+                        <p>Conoce las diferencias entre nuestras tarjetas</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="comparison-table" data-aos="fade-up">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Característica</th>
+                                    <th>Débito</th>
+                                    <th>Crédito</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Costo de emisión</td>
+                                    <td><i class="fas fa-check text-success"></i> Gratuito</td>
+                                    <td><i class="fas fa-check text-success"></i> Gratuito</td>
+                                </tr>
+                                <tr>
+                                    <td>Costo de mantenimiento</td>
+                                    <td><i class="fas fa-check text-success"></i> Gratuito</td>
+                                    <td>₲50,000/año</td>
+                                </tr>
+                                <tr>
+                                    <td>Límite de uso</td>
+                                    <td>Saldo disponible</td>
+                                    <td>Hasta ₲50,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Pago de intereses</td>
+                                    <td><i class="fas fa-times text-danger"></i> No aplica</td>
+                                    <td>Solo si no pagas el total</td>
+                                </tr>
+                                <tr>
+                                    <td>Programa de recompensas</td>
+                                    <td><i class="fas fa-times text-danger"></i> No incluido</td>
+                                    <td><i class="fas fa-check text-success"></i> Incluido</td>
+                                </tr>
+                                <tr>
+                                    <td>Seguros</td>
+                                    <td>Básico</td>
+                                    <td>Completo</td>
+                                </tr>
+                                <tr>
+                                    <td>Cuotas</td>
+                                    <td><i class="fas fa-times text-danger"></i> No disponible</td>
+                                    <td><i class="fas fa-check text-success"></i> Disponible</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios y Promociones -->
+    <section class="promociones-section section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>Beneficios y Promociones</h2>
+                        <p>Descuentos exclusivos para portadores de tarjetas</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="promocion-card">
+                        <div class="promocion-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h4>Restaurantes</h4>
+                        <p>Hasta 20% de descuento en restaurantes seleccionados</p>
+                        <ul class="promocion-details">
+                            <li>Descuentos todos los días</li>
+                            <li>Más de 50 restaurantes</li>
+                            <li>Sin límite de uso</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="promocion-card">
+                        <div class="promocion-icon">
+                            <i class="fas fa-gas-pump"></i>
+                        </div>
+                        <h4>Combustible</h4>
+                        <p>Descuentos especiales en estaciones de servicio</p>
+                        <ul class="promocion-details">
+                            <li>5% de descuento</li>
+                            <li>Estaciones afiliadas</li>
+                            <li>Acumulación de puntos</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="promocion-card">
+                        <div class="promocion-icon">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <h4>Compras</h4>
+                        <p>Cuotas sin interés en comercios adheridos</p>
+                        <ul class="promocion-details">
+                            <li>Hasta 12 cuotas sin interés</li>
+                            <li>Supermercados y tiendas</li>
+                            <li>Promociones especiales</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="promocion-card">
+                        <div class="promocion-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h4>Viajes</h4>
+                        <p>Descuentos en hoteles y aerolíneas</p>
+                        <ul class="promocion-details">
+                            <li>Hasta 15% de descuento</li>
+                            <li>Agencias de viaje</li>
+                            <li>Seguros de viaje</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="promocion-card">
+                        <div class="promocion-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h4>Entretenimiento</h4>
+                        <p>Ofertas especiales en cines y eventos</p>
+                        <ul class="promocion-details">
+                            <li>2x1 en cines</li>
+                            <li>Descuentos en eventos</li>
+                            <li>Entretenimiento familiar</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="promocion-card">
+                        <div class="promocion-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Educación</h4>
+                        <p>Beneficios especiales para estudiantes</p>
+                        <ul class="promocion-details">
+                            <li>Descuentos en colegios</li>
+                            <li>Cursos online</li>
+                            <li>Material educativo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso de Solicitud -->
+    <section id="solicitar-tarjeta" class="process-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>¿Cómo Solicitar tu Tarjeta?</h2>
+                        <p>Proceso rápido y sencillo en 4 pasos</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">
+                            <i class="fas fa-mouse-pointer"></i>
+                        </div>
+                        <h4>Solicitud Online</h4>
+                        <p>Completa el formulario de solicitud desde nuestra web o app</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4>Evaluación</h4>
+                        <p>Analizamos tu solicitud y capacidad de pago en 24 horas</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">
+                            <i class="fas fa-thumbs-up"></i>
+                        </div>
+                        <h4>Aprobación</h4>
+                        <p>Recibe la confirmación de aprobación por SMS y email</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h4>Entrega</h4>
+                        <p>Recibe tu tarjeta en tu domicilio o retírala en sucursal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simulador de Tarjeta de Crédito -->
+    <section class="simulator-section section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>Simulador de Tarjeta de Crédito</h2>
+                        <p>Calcula tu cuota mensual y límite disponible</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="simulator-container" data-aos="fade-up">
+                        <div class="simulator-form">
+                            <div class="form-group">
+                                <label>Ingresos Mensuales (₲)</label>
+                                <input type="number" id="monthly-income" class="form-control" placeholder="Ej: 5000000" min="0">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Gastos Mensuales (₲)</label>
+                                <input type="number" id="monthly-expenses" class="form-control" placeholder="Ej: 3000000" min="0">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Monto de Compra (₲)</label>
+                                <input type="number" id="purchase-amount" class="form-control" placeholder="Ej: 2000000" min="0">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Número de Cuotas</label>
+                                <select id="installments" class="form-control">
+                                    <option value="1">1 cuota</option>
+                                    <option value="3">3 cuotas</option>
+                                    <option value="6">6 cuotas</option>
+                                    <option value="12">12 cuotas</option>
+                                    <option value="18">18 cuotas</option>
+                                    <option value="24">24 cuotas</option>
+                                </select>
+                            </div>
+                            
+                            <button type="button" class="btn btn-primary btn-block" onclick="simulateCredit()">
+                                <i class="fas fa-calculator"></i> Simular
+                            </button>
+                        </div>
+                        
+                        <div class="simulator-result" id="credit-result" style="display: none;">
+                            <h4>Resultado de la Simulación</h4>
+                            <div class="result-item">
+                                <span class="result-label">Límite sugerido:</span>
+                                <span class="result-value" id="suggested-limit">₲0</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Cuota mensual:</span>
+                                <span class="result-value" id="monthly-payment">₲0</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Total a pagar:</span>
+                                <span class="result-value" id="total-payment">₲0</span>
+                            </div>
+                            
+                            <div class="result-actions">
+                                <a href="contacto.html" class="btn btn-primary">Solicitar Tarjeta</a>
+                                <button class="btn btn-outline-primary" onclick="printSimulation()">
+                                    <i class="fas fa-print"></i> Imprimir
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>Preguntas Frecuentes</h2>
+                        <p>Resolvemos tus dudas sobre nuestras tarjetas</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="faq-container" data-aos="fade-up">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>¿Cuáles son los requisitos para obtener una tarjeta?</h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Para obtener una tarjeta debes ser mayor de 18 años, tener ingresos comprobables, presentar cédula de identidad vigente y ser asociado de la cooperativa.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>¿Puedo usar mi tarjeta en el extranjero?</h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Sí, nuestras tarjetas tienen aceptación mundial. Puedes usarlas en cualquier lugar donde se acepte Visa o Mastercard.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>¿Cómo puedo consultar mi saldo y movimientos?</h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Puedes consultar tu saldo a través de nuestra app móvil, banca online, cajeros automáticos o llamando al centro de atención telefónica.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>¿Qué hago si pierdo mi tarjeta?</h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Debes reportar inmediatamente la pérdida llamando a nuestro centro de atención 24/7 o bloqueando la tarjeta desde la app móvil.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>¿Cómo funciona el programa de recompensas?</h4>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Por cada compra con tu tarjeta de crédito acumulas puntos que puedes canjear por productos, servicios o descuentos en comercios afiliados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section tarjetas-cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cta-content text-center" data-aos="fade-up">
+                        <h2>¡Obtén tu tarjeta hoy mismo!</h2>
+                        <p>Únete a miles de paraguayos que ya disfrutan de los beneficios de nuestras tarjetas</p>
+                        <div class="cta-buttons">
+                            <a href="contacto.html" class="btn btn-primary">
+                                <i class="fas fa-credit-card"></i> Solicitar Tarjeta
+                            </a>
+                            <a href="locales.html" class="btn btn-outline-primary">
+                                <i class="fas fa-map-marker-alt"></i> Encontrar Sucursal
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <img src="assets/images/logo-white.png" alt="Cooperativa Medalla Milagrosa">
+                            </div>
+                            <p>
+                                Más de 50 años promoviendo el desarrollo socioeconómico de nuestros asociados y la comunidad paraguaya.
+                            </p>
+                            <div class="footer-social">
+                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Nosotros</h4>
+                            <ul class="footer-links">
+                                <li><a href="historia.html">Historia</a></li>
+                                <li><a href="mision.html">Misión</a></li>
+                                <li><a href="valores.html">Valores</a></li>
+                                <li><a href="cooperativismo.html">Cooperativismo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Servicios</h4>
+                            <ul class="footer-links">
+                                <li><a href="creditos.html">Créditos</a></li>
+                                <li><a href="ahorros.html">Ahorros</a></li>
+                                <li><a href="tarjetas.html">Tarjetas</a></li>
+                                <li><a href="seguros.html">Seguros</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Enlaces</h4>
+                            <ul class="footer-links">
+                                <li><a href="solidaridad.html">Solidaridad</a></li>
+                                <li><a href="locales.html">Sucursales</a></li>
+                                <li><a href="contacto.html">Contacto</a></li>
+                                <li><a href="medalla-online.html">Medalla Online</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Contacto</h4>
+                            <div class="contact-info">
+                                <p><i class="fas fa-phone"></i> (021) 123-456</p>
+                                <p><i class="fas fa-envelope"></i> info@medallamilagrosa.coop</p>
+                                <p><i class="fas fa-map-marker-alt"></i> Asunción, Paraguay</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <p>&copy; 2024 Cooperativa Medalla Milagrosa. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <p>Desarrollado con <i class="fas fa-heart text-danger"></i> por EchoDay</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-button">
+        <a href="https://wa.me/595981234567" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-text">¿Necesitas ayuda?</span>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Simulador de Tarjeta de Crédito
+        function simulateCredit() {
+            const monthlyIncome = parseFloat(document.getElementById('monthly-income').value) || 0;
+            const monthlyExpenses = parseFloat(document.getElementById('monthly-expenses').value) || 0;
+            const purchaseAmount = parseFloat(document.getElementById('purchase-amount').value) || 0;
+            const installments = parseInt(document.getElementById('installments').value) || 1;
+            
+            // Validaciones
+            if (monthlyIncome <= 0 || monthlyExpenses <= 0 || purchaseAmount <= 0) {
+                alert('Por favor, complete todos los campos con valores válidos.');
+                return;
+            }
+            
+            if (monthlyExpenses >= monthlyIncome) {
+                alert('Los gastos mensuales no pueden ser mayores o iguales a los ingresos.');
+                return;
+            }
+            
+            // Cálculo del límite sugerido (30% de ingresos netos)
+            const netIncome = monthlyIncome - monthlyExpenses;
+            const suggestedLimit = netIncome * 0.3 * 10; // 10 veces la capacidad mensual
+            
+            // Tasa de interés anual (ejemplo: 24%)
+            const annualRate = 0.24;
+            const monthlyRate = annualRate / 12;
+            
+            // Cálculo de cuota mensual
+            let monthlyPayment;
+            if (installments === 1) {
+                monthlyPayment = purchaseAmount;
+            } else {
+                monthlyPayment = purchaseAmount * (monthlyRate * Math.pow(1 + monthlyRate, installments)) / (Math.pow(1 + monthlyRate, installments) - 1);
+            }
+            
+            const totalPayment = monthlyPayment * installments;
+            
+            // Mostrar resultados
+            document.getElementById('suggested-limit').textContent = '₲' + suggestedLimit.toLocaleString();
+            document.getElementById('monthly-payment').textContent = '₲' + monthlyPayment.toLocaleString();
+            document.getElementById('total-payment').textContent = '₲' + totalPayment.toLocaleString();
+            
+            document.getElementById('credit-result').style.display = 'block';
+        }
+        
+        function printSimulation() {
+            window.print();
+        }
+        
+        // FAQ functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const icon = item.querySelector('.faq-question i');
+                
+                question.addEventListener('click', function() {
+                    const isActive = item.classList.contains('active');
+                    
+                    // Cerrar todas las otras preguntas
+                    faqItems.forEach(otherItem => {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.faq-answer').style.display = 'none';
+                        otherItem.querySelector('.faq-question i').classList.remove('fa-minus');
+                        otherItem.querySelector('.faq-question i').classList.add('fa-plus');
+                    });
+                    
+                    if (!isActive) {
+                        item.classList.add('active');
+                        answer.style.display = 'block';
+                        icon.classList.remove('fa-plus');
+                        icon.classList.add('fa-minus');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
